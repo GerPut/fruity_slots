@@ -120,12 +120,12 @@ body {
         justify-content: center;
         background-color: lightgrey;
         height: 70px;
-        width: 100px;
+        width: 125px;
         margin: 0;
         margin-top: 10px;
         color: black;
         font-weight: bold;
-        font-size: 12px;
+        font-size: 10px;
         border: 2px solid black;
         font-family: 'Kiwi Maru', serif;
     }
