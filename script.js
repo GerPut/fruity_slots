@@ -101,7 +101,7 @@ function testWin() {
 
     } else if (slot1 == slot2 || slot1 == slot3 || slot2 == slot3) {
         status.innerHTML = "You Win!"
-        money += 100;
+        money += 50;
 
 
 
