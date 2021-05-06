@@ -1,0 +1,1 @@
+This is a project I built with various snippets of code. I used different ideas from codepen and other sites to complete this task.
