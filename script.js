@@ -1,7 +1,7 @@
 
 //Variables
 
-var doing = false;
+var startGame = false;
 var spin = [];
 let status = document.getElementById("status")
 let handleBall = document.querySelector('.handle-bar-ball')
@@ -16,14 +16,14 @@ function updateMoney(money) {
 
 }
 
-function doSlot() {
+function pullHandle() {
     handleBall.classList.toggle('movedown')
-    if (doing) { return null; }
-    doing = true;
+    if (startGame) { return null; }
+    startGame = true;
     var numChanges = randomInt(1, 4) * 10
-    var numeberSlot1 = numChanges + randomInt(1, 10)
-    var numeberSlot2 = numChanges + 2 * 10 + randomInt(1, 10)
-    var numeberSlot3 = numChanges + 4 * 10 + randomInt(1, 10)
+    var numberSlot1 = numChanges + randomInt(1, 10)
+    var numberSlot2 = numChanges + 2 * 10 + randomInt(1, 10)
+    var numberSlot3 = numChanges + 4 * 10 + randomInt(1, 10)
 
     var i1 = 0;
     var i2 = 0;
@@ -37,7 +37,7 @@ function doSlot() {
 
     function spin1() {
         i1++;
-        if (i1 >= numeberSlot1) {
+        if (i1 >= numberSlot1) {
             clearInterval(slot1);
             return null;
         }
@@ -49,7 +49,7 @@ function doSlot() {
     }
     function spin2() {
         i2++;
-        if (i2 >= numeberSlot2) {
+        if (i2 >= numberSlot2) {
             clearInterval(slot2);
             return null;
         }
@@ -61,7 +61,7 @@ function doSlot() {
     }
     function spin3() {
         i3++;
-        if (i3 >= numeberSlot3) {
+        if (i3 >= numberSlot3) {
             clearInterval(slot3);
             testWin();
             return null;
@@ -113,7 +113,7 @@ function testWin() {
     }
     updateMoney(money)
     handleBall.classList.remove('movedown')
-    doing = false;
+    startGame = false;
 }
 
 function randomInt(min, max) {
