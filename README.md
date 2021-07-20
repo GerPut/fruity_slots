@@ -1,4 +1,4 @@
-Fruity Slots
+## Fruity Slots Project
 
 This is a game project I built using different ideas from codepen and other sites to complete. Similar expamples of slot machines was examined and I tried to mimic them to build my own. The project took about 1 week to complete and updates on code were made after I pushed the project to GitHub.
 
