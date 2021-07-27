@@ -4,7 +4,7 @@
 
 body {
     box-sizing: border-box;
-    background-color: steelblue;
+    background: radial-gradient(#9FFFF1, #0087AC, #133448);
     display: flex;
     justify-content: center;
     align-items: center;
